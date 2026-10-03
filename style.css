@@ -1,4 +1,4 @@
-/* Style the whole page */
+/* Basic page styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -6,39 +6,138 @@ body {
     padding: 20px;
 }
 
-/* Element selector */
-h1 {
+/* Header */
+header {
+    background-color: #2c7a4b;
     color: white;
     text-align: center;
+    padding: 25px;
+    border-radius: 10px;
 }
 
-/* ID selector */
+header h1 {
+    margin: 10px 0;
+}
+
+/* Add Expense section */
 #add-expense {
     background-color: #d9f2e6;
     padding: 20px;
     margin: 20px auto;
-    max-width: 500px;
+    max-width: 600px;
     border-radius: 10px;
 }
 
-/* Class selector */
-.expenses {
-    background-color: white;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 500px;
-    border-radius: 10px;
+/* Direct child selector */
+.add-expense-section > h2 {
+    color: #2c7a4b;
 }
 
-header {
-    background-color: #2c7a4b;
-    padding: 20px;
-    border-radius: 10px;
+/* Form elements */
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
-input {
+input,
+select {
     display: block;
     width: 95%;
     padding: 10px;
     margin: 8px 0 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+/* Negation pseudo-class */
+input:not([type="submit"]) {
+    background-color: white;
+}
+
+/* Focus pseudo-class */
+input:focus,
+select:focus {
+    border: 2px solid #2c7a4b;
+    outline: none;
+}
+
+/* Button */
+button {
+    background-color: #2c7a4b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #205c38;
+}
+
+/* Expenses section */
+.expenses-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+/* Descendant selector */
+.expenses-section td {
+    padding: 12px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #2c7a4b;
+    color: white;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Table row hover */
+tbody tr:hover {
+    background-color: #d9f2e6;
+}
+
+/* Details section */
+details {
+    background-color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Video section */
+.video-section {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.video-section iframe {
+    max-width: 100%;
 }
