@@ -1,42 +1,80 @@
-## Week 3: Visual Design
+## Week 4: SpendWise Dashboard Shell
 
-In Week 3, I improved the visual design of my Budget Tracker using CSS.
+For Week 4, I transformed my Budget Tracker into a SpendWise financial dashboard shell.
 
-### Color Palette
+### Dashboard Structure
 
-I used a green color palette to create a clean and consistent appearance across the application.
+The dashboard contains:
 
-### Typography
+- A sidebar navigation menu
+- A financial dashboard header
+- A financial summary section
+- Six spending category cards
+- A recent transactions section
 
-I used Google Fonts:
-- Playfair Display for headings
-- DM Sans for body text and interface elements
+### Spending Categories
 
-### Table Styling
+The dashboard displays six realistic financial categories:
 
-The expense table includes:
-- Borders
-- Cell padding
-- Colored table headers
-- Alternating row colors
-- Hover effects
+- Food
+- Transport
+- Rent
+- Entertainment
+- Savings
+- Utilities
 
-### Form Styling
+Each card contains a category name, description, spending amount, percentage, and progress bar.
 
-The Add Expense form includes:
-- Styled input fields
-- Rounded corners
-- Focus effects
-- Consistent spacing
-- A styled Add Expense button
+### CSS Grid
 
-### CSS Box Model
+CSS Grid is used to create the main dashboard structure with a sidebar and main content area.
 
-I used:
-- Margin
-- Padding
-- Borders
-- Border radius
-- Box shadows
+CSS Grid is also used for the category cards.
 
-These properties were used to create separate visual cards for the page heading, Add Expense form, and Expense Table.
+### Flexbox
+
+Flexbox is used for:
+
+- Sidebar navigation
+- Header content
+- Profile section
+- Summary cards
+- Category card content
+- Transaction rows
+
+### CSS Custom Properties
+
+The application uses CSS variables to define the theme, including:
+
+- Brand color
+- Accent color
+- Background color
+- Surface color
+- Primary text color
+- Secondary text color
+- Border color
+
+### Responsive Design
+
+A media query at 768px changes the dashboard into a single-column layout for smaller screens.
+
+The sidebar navigation also changes to a horizontal layout on smaller screens.
+
+### Card Micro-interactions
+
+The dashboard cards have hover and keyboard focus effects.
+
+The animations use:
+
+- `transform`
+- `box-shadow`
+- `transition`
+
+The transitions are 200ms, which is below the required 250ms limit.
+
+### Dark Theme
+
+A dark theme was added using:
+
+```css
+@media (prefers-color-scheme: dark)
