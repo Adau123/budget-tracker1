@@ -1,59 +1,42 @@
-# My Budget Tracker
+## Week 3: Visual Design
 
-## About the Project
+In Week 3, I improved the visual design of my Budget Tracker using CSS.
 
-My Budget Tracker is a simple website for recording and viewing personal expenses. 
-It was created as part of my HTML and CSS learning project.
+### Color Palette
 
-## Features
+I used a green color palette to create a clean and consistent appearance across the application.
 
-### Add Expense Form
+### Typography
 
-The Add Expense section contains:
+I used Google Fonts:
+- Playfair Display for headings
+- DM Sans for body text and interface elements
 
-- Expense name input
-- Amount input
-- Category dropdown
-- Add Expense button
+### Table Styling
 
-The category dropdown includes Food, Transport, Rent, Entertainment, and Other.
+The expense table includes:
+- Borders
+- Cell padding
+- Colored table headers
+- Alternating row colors
+- Hover effects
 
-### Expense Table
+### Form Styling
 
-The Your Expenses section contains a table showing sample expenses.
+The Add Expense form includes:
+- Styled input fields
+- Rounded corners
+- Focus effects
+- Consistent spacing
+- A styled Add Expense button
 
-The table includes:
+### CSS Box Model
 
-- Name
-- Amount
-- Category
-- Date
+I used:
+- Margin
+- Padding
+- Borders
+- Border radius
+- Box shadows
 
-### Multimedia
-
-The website includes a budget tracker image and an embedded YouTube budgeting video.
-
-### How to Use
-
-The page also includes a collapsible section explaining how to use the tracker.
-
-## Technologies Used
-
-- HTML5
-- CSS3
-- GitHub
-
-## CSS Selectors Used
-
-The project demonstrates:
-
-- Descendant selectors
-- Direct child selectors
-- `:nth-child()` pseudo-class
-- `:not()` pseudo-class
-- `:focus` pseudo-class
-- `:hover` pseudo-class
-
-## Future Improvements
-
-In future weeks, I will add JavaScript functionality so that users can add and manage expenses dynamically.
+These properties were used to create separate visual cards for the page heading, Add Expense form, and Expense Table.
