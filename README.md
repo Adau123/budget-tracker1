@@ -1,80 +1,63 @@
-## Week 4: SpendWise Dashboard Shell
+# SpendWise
 
-For Week 4, I transformed my Budget Tracker into a SpendWise financial dashboard shell.
+SpendWise is a personal budgeting dashboard designed to help users understand and manage their finances.
 
-### Dashboard Structure
+The project started as a basic Budget Tracker and has been developed into a modern financial dashboard using HTML, CSS, and JavaScript.
+
+## Project Features
+
+SpendWise currently includes:
+
+- Financial dashboard
+- Sidebar navigation
+- Financial summary cards
+- Spending category cards
+- Recent transactions
+- Responsive design
+- CSS Grid and Flexbox layout
+- Custom CSS variables
+- Dark theme support
+- JavaScript budgeting calculations
+- User input through JavaScript prompts
+- Console-based financial results
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Google Fonts
+- GitHub Pages
+
+---
+
+# Week 4 - Dashboard Layout
+
+In Week 4, the project was transformed into a SpendWise dashboard.
 
 The dashboard contains:
 
-- A sidebar navigation menu
-- A financial dashboard header
-- A financial summary section
-- Six spending category cards
-- A recent transactions section
-
-### Spending Categories
-
-The dashboard displays six realistic financial categories:
-
-- Food
-- Transport
-- Rent
-- Entertainment
-- Savings
-- Utilities
-
-Each card contains a category name, description, spending amount, percentage, and progress bar.
-
-### CSS Grid
-
-CSS Grid is used to create the main dashboard structure with a sidebar and main content area.
-
-CSS Grid is also used for the category cards.
-
-### Flexbox
-
-Flexbox is used for:
-
 - Sidebar navigation
-- Header content
-- Profile section
-- Summary cards
-- Category card content
-- Transaction rows
+- Financial dashboard header
+- Total balance
+- Monthly income
+- Monthly expenses
+- Food category
+- Transport category
+- Rent category
+- Entertainment category
+- Savings category
+- Utilities category
+- Recent transactions
 
-### CSS Custom Properties
+## CSS Grid
 
-The application uses CSS variables to define the theme, including:
+CSS Grid is used for the main dashboard layout.
 
-- Brand color
-- Accent color
-- Background color
-- Surface color
-- Primary text color
-- Secondary text color
-- Border color
-
-### Responsive Design
-
-A media query at 768px changes the dashboard into a single-column layout for smaller screens.
-
-The sidebar navigation also changes to a horizontal layout on smaller screens.
-
-### Card Micro-interactions
-
-The dashboard cards have hover and keyboard focus effects.
-
-The animations use:
-
-- `transform`
-- `box-shadow`
-- `transition`
-
-The transitions are 200ms, which is below the required 250ms limit.
-
-### Dark Theme
-
-A dark theme was added using:
+The dashboard has a sidebar and a main content area.
 
 ```css
-@media (prefers-color-scheme: dark)
+.dashboard {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+}
